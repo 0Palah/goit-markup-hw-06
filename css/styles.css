@@ -236,9 +236,9 @@ img {
   color: var(--text-white-color);
 }
 
-.hero-button {
+.hero-button,
+.footer-button {
   background-color: var(--accent-color);
-  border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -249,7 +249,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -260,11 +259,14 @@ img {
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.footer-button:hover,
+.footer-button:focus {
   background-color: var(--button-hover-color);
 }
 
-.hero-button:active {
+.hero-button:active,
+.footer-button:active {
   color: var(--accent-color);
   background-color: var(--primary-background-color);
   border-color: var(--accent-color);
@@ -508,7 +510,7 @@ img {
   color: var(--text-white-color);
 }
 
-/* ================= Постійні клієнти =================== */
+/* =================== Постійні клієнти =================== */
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -539,7 +541,7 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-/*====================== Футер =====================*/
+/*=========================== Футер ========================*/
 .footer {
   background-color: var(--footer-background-color);
   padding-top: 60px;
@@ -585,7 +587,12 @@ img {
   color: var(--accent-color);
 }
 
-.join .title {
+.join {
+  margin-right: auto;
+}
+
+.join .title, 
+.subscribe .title {
   font-size: 14px;
   color: var(--text-white-color);
   line-height: 1.14;
@@ -620,6 +627,33 @@ img {
 .footer-social .link:focus {
   background-color: var(--accent-color);
 }
+
+.subscribe .botom {
+  display: flex;
+  align-items: center;
+  width: 570px;
+}
+
+.subscribe input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
+  
+  color: var(--mail-tel-color);
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.footer-button {
+  padding: 10px 28px;
+  fill: currentColor;
+}
+
 
 /* ======================= Портфоліо ======================*/
 

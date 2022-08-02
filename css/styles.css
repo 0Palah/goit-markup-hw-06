@@ -396,6 +396,7 @@ img {
   padding-left: 23px;
   font-size: 14px;
   line-height: 1.71;
+  cursor: pointer;
   color: var(--secondary-text-color);
 }
 
@@ -411,6 +412,7 @@ img {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   background-color: var(--primary-background-color);
+  cursor: pointer;
   outline: none;
   transition: border-color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun);
 }
